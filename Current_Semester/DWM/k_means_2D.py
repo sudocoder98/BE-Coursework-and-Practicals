@@ -9,9 +9,7 @@ def sqrt(n):
 # Accept Data
 print("Separate each pair of coordinates with a comma (,) like this: 2 3, 4 10")
 data = [tuple([int(y) for y in x.strip().split()]) for x in raw_input("Enter the data points: ").split(',')]
-# Input
-# 2 10 , 2 5 , 8 4 , 5 8 ,7 5 , 6 4 , 1 2 , 4 9
-# 2 10 , 5 8 , 1 2
+
 # centroids = [tuple([int(y) for y in x.strip().split()]) for x in raw_input("Enter the centroid points: ").split(',')]
 # k = len(centroids)
 centroids = [ ]
@@ -47,6 +45,8 @@ def calcMean(clusters, k):
 			sumy += dy
 		if len(cluster) != 0:
 			means.append((float(sumx)/len(cluster),float(sumy)/len(cluster)))
+		else:
+			means.append((0,0))
 	return means
 
 def updateCentroids(centroids, means, k):

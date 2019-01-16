@@ -5,9 +5,7 @@ import random
 print("Separate each data point with a space ' ' like this: 2 3 4 10")
 data = [int(x) for x in raw_input("Enter the data points: ").split()]
 data.sort()
-# Input: 
-# 2 4 10 12 3 20 30 11 25
-# 2 4
+
 # centroids = [int(x) for x in raw_input("Enter the centroids: ").split()]
 # k = len(centroids)
 centroids = [ ]
@@ -38,12 +36,13 @@ def calcMean(clusters, k):
 			total += dataPoint
 		if len(cluster) != 0:
 			means.append(float(total)/len(cluster))
+		else:
+			means.append(int(0))
 	return means
 
 def updateCentroids(centroids, means, k):
 	stop = 1
 	for i in xrange(k):
-		print(means[i], centroids[i])
 		if means[i] != centroids[i]:
 			stop = 0
 		# Replace old Centroids with new Means
