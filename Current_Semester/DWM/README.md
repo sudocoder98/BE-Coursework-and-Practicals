@@ -30,4 +30,13 @@
 - Generating random centroids may not always result in the same number of clusters as specified.
 
 ## Experiment 2
+### To perform K-Nearest Neighbours on 2D data
+
+Sample Input:
+Enter the list of classifiers separated by spaces: Good Bad
+Enter the data points and their classification: 7 7 Bad, 7 4 Bad, 3 4 Good, 1 4 Good
+Enter the test coordinates: 3 7
+Enter the size of the cluster: 3
+
+## Experiment 2
 ### .

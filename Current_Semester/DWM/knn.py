@@ -1,11 +1,4 @@
 # K-Nearest Neighbours for 2D Data in Python
-# 
-# Sample Input
-# 
-# Good, Bad
-# 7 7 Bad, 7 4 Bad, 3 4 Good, 1 4 Good
-# 3 7
-# 3
 
 # Define Math function
 def sq(n):
