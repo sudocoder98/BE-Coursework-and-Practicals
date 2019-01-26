@@ -38,5 +38,31 @@ Enter the data points and their classification: 7 7 Bad, 7 4 Bad, 3 4 Good, 1 4 
 Enter the test coordinates: 3 7
 Enter the size of the cluster: 3
 
-## Experiment 2
-### .
+## Experiment 3
+### To perform Agglomerative (Hierarchical) Clustering
+
+Sample Input:
+Enter the number of points: 4
+Enter the labels for each point: A B C D
+Enter the type of matrix (0=Dissimilarity, 1=Similarity): 0
+A: 0
+B: 1 0
+C: 4 2 0
+D: 5 6 3 0
+
+Output:
+Single Linkage --- 
+('Labels: ', ['AB', 'C', 'D'])
+('Labels: ', ['ABC', 'D'])
+('Labels: ', ['ABCD'])
+('Dendogram: ', [(1.0, ('A', 'B')), (2.0, ('AB', 'C')), (3.0, ('ABC', 'D'))])
+Complete Linkage --- 
+('Labels: ', ['AB', 'C', 'D'])
+('Labels: ', ['AB', 'CD'])
+('Labels: ', ['ABCD'])
+('Dendogram: ', [(1.0, ('A', 'B')), (3.0, ('C', 'D')), (6.0, ('AB', 'CD'))])
+Aggregate Linkage --- 
+('Labels: ', ['AB', 'C', 'D'])
+('Labels: ', ['ABC', 'D'])
+('Labels: ', ['ABCD'])
+('Dendogram: ', [(1.0, ('A', 'B')), (3.0, ('AB', 'C')), (4.25, ('ABC', 'D'))])
