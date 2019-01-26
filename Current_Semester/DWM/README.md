@@ -4,7 +4,7 @@
 ## Experiment 1
 ### To perform K-Means clustering on 1D and 2D data
 
-1. k_means_1D.py
+1. [k_means_1D.py](k_means_1D.py)
   - To allow user to input centroids comment lines 11-14 and uncomment lines 9-10  
     Input:  
     2 4 10 12 3 20 30 11 25  
@@ -15,7 +15,7 @@
     2 4 10 12 3 20 30 11 25  
     2  
 
-2. k_means_2D.py
+2. [k_means_2D.py](k_means_2D.py)
   - To allow user to input centroids comment lines 15-22 and uncomment lines 13-14  
     Input:  
     2 10 , 2 5 , 8 4 , 5 8 ,7 5 , 6 4 , 1 2 , 4 9  
@@ -30,7 +30,7 @@
 - Generating random centroids may not always result in the same number of clusters as specified.
 
 ## Experiment 2
-### To perform K-Nearest Neighbours on 2D data
+### [To perform K-Nearest Neighbours on 2D data](knn.py)
 
 Sample Input:
 Enter the list of classifiers separated by spaces: Good Bad
@@ -39,7 +39,7 @@ Enter the test coordinates: 3 7
 Enter the size of the cluster: 3
 
 ## Experiment 3
-### To perform Agglomerative (Hierarchical) Clustering
+### [To perform Agglomerative (Hierarchical) Clustering](agglomerative_clustering.py)
 
 Sample Input:
 Enter the number of points: 4
