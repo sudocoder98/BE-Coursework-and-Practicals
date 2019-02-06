@@ -69,3 +69,26 @@ Aggregate Linkage ---
 ('Labels: ', ['ABC', 'D'])  
 ('Labels: ', ['ABCD'])  
 ('Dendogram: ', [(1.0, ('A', 'B')), (3.0, ('AB', 'C')), (4.25, ('ABC', 'D'))])  
+
+## Experiment 4
+### [To perform DBSCAN Algorithm](dbscan.py)
+
+Sample Input:  
+Enter the number of points: 8  
+Enter the labels for each point: A1 A2 A3 A4 A5 A6 A7 A8  
+Enter the data points: 2 10 , 2 5 , 8 4 , 5 8 , 7 5 , 6 4 , 1 2 , 4 9  
+Enter the radius of cluster: 2  
+Enter the minimum number of points in cluster: 2  
+
+Output:
+('A1', 'Noise', ['A1'])  
+('A2', 'Noise', ['A2'])  
+('A3', 'Core', ['A3', 'A5', 'A6'])  
+('A4', 'Core', ['A4', 'A8'])  
+('A5', 'Core', ['A3', 'A5', 'A6'])  
+('A6', 'Core', ['A3', 'A5', 'A6'])  
+('A7', 'Noise', ['A7'])  
+('A8', 'Core', ['A4', 'A8'])  
+
+Visualisation:
+(/assets/dbscan.png)
