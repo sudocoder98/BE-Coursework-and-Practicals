@@ -91,4 +91,4 @@ Output:
 ('A8', 'Core', ['A4', 'A8'])  
 
 Visualisation:
-(/assets/dbscan.png)
+![Resulting Clusters](/assets/dbscan.png)
