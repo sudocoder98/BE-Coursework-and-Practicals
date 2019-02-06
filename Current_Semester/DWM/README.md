@@ -90,5 +90,5 @@ Output:
 ('A7', 'Noise', ['A7'])  
 ('A8', 'Core', ['A4', 'A8'])  
 
-Visualisation:
+Visualisation:  
 ![Resulting Clusters](assets/dbscan.png)
